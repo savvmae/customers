@@ -26,8 +26,6 @@ function buildCustomers(customerData) {
     newCustomerAddress2.textContent = address2;
     newCustomerCell.textContent = cell;
 
-
-
     newCustomerDiv.setAttribute('class', 'single-customer');
     newCustomerText.setAttribute('class', 'text');
     newCustomerName.setAttribute('class', 'name');
@@ -59,7 +57,7 @@ function buildCustomers(customerData) {
 
 
   $.ajax({
-    url: 'https://randomuser.me/api/?results=12',
+    url: 'https://randomuser.me/api/?results=12&nat=nz',
     dataType: 'json',
     success: function(data) {
       buildCustomers(data.results);

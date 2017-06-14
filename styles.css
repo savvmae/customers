@@ -7,12 +7,14 @@ body {
   font-size: 18px;
 }
 h1 {
-  width: 50%;
+  width: 100%;
   margin: auto;
   text-align: center;
   padding: 20px;
   font-size: 60px;
 }
+
+
 .customers {
   display: flex;
   flex-direction: row;
@@ -51,4 +53,35 @@ h1 {
 }
 .address-cell {
   color: gray;
+}
+@media only screen and (max-width: 769px) {
+  .single-customer {
+    width: calc(33% - 10px);
+  }
+  body {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .single-customer {
+    width: calc(50% - 10px);
+  }
+  body {
+    font-size: 16px;
+  }
+  .email, .address-cell {
+  font-size: 12px;
+  padding: 0px;
+  }
+  .emai {
+    text-align: left;
+  }
+  .text {
+    padding: 0px;
+  }
+  .name {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+
 }
