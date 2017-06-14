@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: 'Bubbler One', sans-serif;
+  font-size: 18px;
+}
+h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+.customers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.single-customer {
+  width: calc(25% - 10px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-self: flex-start;
+}
+.text {
+  text-align: center;
+  padding: 10px;
+}
+.customer-img {
+  width: 80%;
+  margin:auto;
+}
+.name {
+  border-bottom: 2px solid green;
+  width: 50%;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px;
+}
+.email {
+  color: lightgray;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.address-cell {
+  color: gray;
+}
